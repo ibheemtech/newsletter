@@ -91,12 +91,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ibheemtech@gmail.com';
-        $mail->Password = 'gebp xfgr ndkw qmic';
+        $mail->Username = 'your email';
+        $mail->Password = 'your password';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         
-        $mail->setFrom('ibheemtech@gmail.com', 'ibheemtech');
+        $mail->setFrom('reply@gmail.com', 'title');
         $mail->addAddress($email);
         $mail->Subject = $subject;
         $mail->isHTML(true);  // Set email format to HTML
@@ -108,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 throw new Exception($mail->ErrorInfo);
             } else {
                 // Send notification to admin
-                $adminEmail = 'ibheemtech@gmail.com';
+                $adminEmail = 'your email';
                 $notificationMail = new PHPMailer;
                 $notificationMail->isSMTP();
                 $notificationMail->Host = 'smtp.gmail.com';
