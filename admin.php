@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ibheemtech@gmail.com';
-        $mail->Password = 'gebp xfgr ndkw qmic';
+        $mail->Username = 'your email';
+        $mail->Password = 'your password';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('ibheemtech@gmail.com', 'Admin');
+        $mail->setFrom('reply@gmail.com', 'Admin');
         $mail->addAddress($email);
         $mail->Subject = $subject;
         $mail->Body = $message;
@@ -57,11 +57,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ibheemtech@gmail.com';
-        $mail->Password = 'gebp xfgr ndkw qmic';
+        $mail->Username = 'your email';
+        $mail->Password = 'your password';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('ibheemtech@gmail.com', 'Admin');
+        $mail->setFrom('reply@gmail.com', 'Admin');
         $mail->Subject = 'Newsletter';
         $mail->Body = $message;
 
@@ -83,11 +83,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ibheemtech@gmail.com';
-        $mail->Password = 'gebp xfgr ndkw qmic';
+        $mail->Username = 'your email';
+        $mail->Password = 'your password';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('ibheemtech@gmail.com', 'Admin');
+        $mail->setFrom('reply@gmail.com', 'Admin');
         $mail->addAddress($recipient);
         $mail->Subject = 'Newsletter';
         $mail->Body = $message;
